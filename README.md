@@ -3,7 +3,7 @@ Hi 👋 My name is Himanshu Shakya
 
 * 🌍  I'm based in New Delhi
 * ✉️  You can contact me at [shakya.himanshu200@gmail.com](mailto:shakya.himanshu200@gmail.com)
-* 🧠  I'm learning Rust
+* 🧠  I'm learning Web Development with Nextjs
 * 🤝  I'm open to collaborating on IOT, machine learning, web development projects
 * ⚡  Tech-obsessed gamer with a musical soul.
 
