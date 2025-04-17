@@ -174,9 +174,9 @@
   <img src="https://github-profile-trophy.vercel.app?username=Gamingstein&theme=darkhub&column=-1&row=2&margin-w=8&margin-h=8&no-bg=false&no-frame=false" height="150" alt="Trophies" />
   <img width="20"/>
   <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gamingstein&layout=compact&card_width=320&langs_count=5&theme=tokyonight&hide_border=false" height="210" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gamingstein&layout=compact&card_width=320&langs_count=5&theme=tokyonight&hide_border=false" height="189" alt="Top Languages" />
   <img width="34"/>
-  <img src="https://streak-stats.demolab.com?user=Gamingstein&mode=daily&theme=tokyonight&hide_border=true&border_radius=5" height="210" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com?user=Gamingstein&mode=daily&theme=tokyonight&hide_border=true&border_radius=5" height="189" alt="GitHub Streak" />
   </div>
 </div>
 
