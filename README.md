@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="253" alt="Profile banner" src="https://raw.githubusercontent.com/Gamingstein/Gamingstein/refs/heads/Gamingstein-patch-1/Bridging%20Code%2C%20Circuits%20%26%20Creativity.gif"/>
+  <img height="184" alt="Profile banner" src="https://raw.githubusercontent.com/Gamingstein/Gamingstein/refs/heads/Gamingstein-patch-1/Bridging%20Code%2C%20Circuits%20%26%20Creativity.gif"/>
 </div>
 
 ###
