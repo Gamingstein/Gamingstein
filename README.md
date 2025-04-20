@@ -1,10 +1,11 @@
 <div align="center">
-  
+  <picture>
+    <source media="(min-width: 768px)" srcset="/../refs/heads/Gamingstein-patch-1/GitHub%20banner.gif">
+    <img src="/../refs/heads/Gamingstein-patch-1/GitHub%20banner.gif" align="center" style="width: 100%" />
+  </picture>
+</div>  
 
-
-<a>![Profile banner](https://github.com/Gamingstein/Gamingstein/blob/Gamingstein-patch-1/GitHub%20banner.gif?raw=true)</a>
-</div>
-
+###
 
 <div align="center">
   <h1>🚀 Welcome to My Digital Playground! 🌌</h1>
