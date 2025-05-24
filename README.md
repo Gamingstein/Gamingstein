@@ -15,19 +15,19 @@
 ###
 <div align="center">
   <a href="https://www.linkedin.com/in/gamingstein/" target="_blank">
-    <img src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_TRANSPARENT_400.gif" height="60" alt="LinkedIn logo" />
+    <img src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_TRANSPARENT_400.gif" height="60" width="60" alt="LinkedIn logo" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://x.com/Gamingstein_" target="_blank">
-    <img src="https://cliply.co/wp-content/uploads/2019/07/371907030_TWITTER_ICON_TRANSPARENT_400.gif" height="60" alt="X (formerly Twitter) logo" />
+    <img src="https://cliply.co/wp-content/uploads/2019/07/371907030_TWITTER_ICON_TRANSPARENT_400.gif" height="60" width="60" alt="X (formerly Twitter) logo" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.youtube.com/@Gamingstein_" target="_blank">
-    <img src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif" height="60" alt="YouTube logo" />
+    <img src="https://cliply.co/wp-content/uploads/2019/07/371907120_YOUTUBE_ICON_TRANSPARENT_400.gif" height="60" width="60" alt="YouTube logo" />
   </a>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.instagram.com/" target="_blank">
-    <img src="https://cliply.co/wp-content/uploads/2019/07/371907300_INSTAGRAM_ICON_TRANSPARENT_400.gif" height="60" alt="Instagram logo" />
+    <img src="https://cliply.co/wp-content/uploads/2019/07/371907300_INSTAGRAM_ICON_TRANSPARENT_400.gif" height="60" width="60" alt="Instagram logo" />
   </a>
 </div>
 
