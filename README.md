@@ -20,9 +20,9 @@
 
 ###
 
-<h2 align="left">
+<h3 align="left">
   Hey there! I'm Himanshu Shakya, a tech enthusiast and developer from New Delhi, India. 🚀
-</h2>
+</h3>
 <p>
   🌟 With a background in Electronics Engineering, I blend hardware and software expertise—working on IoT, full-stack development, and game development.
 </p>
