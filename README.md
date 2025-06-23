@@ -27,7 +27,7 @@
   🌟 With a background in Electronics Engineering, I blend hardware and software expertise—working on IoT, full-stack development, and game development.
 </p>
 <p>
-  🔧 Currently building <strong>VitalLink</strong>—an IoT-based health monitoring system combining sensors, ESP32, and cloud tech for real-time insights.
+  🔧 Currently building <strong>Vaultsyn</strong>—a a secure, end-to-end encrypted messaging and identity system written in Rust.
 </p>
 <p>
   🎮 In my free time, I explore game development with Godot Engine, where creativity meets logic.
