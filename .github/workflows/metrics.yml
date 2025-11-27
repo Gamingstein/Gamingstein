@@ -1,11 +1,17 @@
-name: Metrics
+name: 3D Neon City
+
 on:
-  # Schedule daily updates
-  # schedule: [{cron: "0 0 * * *"}]
-  # (Optional) Run workflow manually
+  # 1. Run once a week (Sundays at Midnight UTC)
+  schedule:
+    - cron: "0 0 * * 0"
+  
+  # 2. Run immediately on every new commit to master or main
+  push:
+    branches: ["master", "main"]
+  
+  # 3. Allow manual trigger button
   workflow_dispatch:
-  # (Optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -17,17 +23,17 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
           
-          # Options for the "Out of this World" look
+          # ------------------------------------------------
+          # MINIMALIST SETTINGS
+          # ------------------------------------------------
           user: Gamingstein
-          template: classic
-          base: header, activity, community, repositories, metadata
-          config_timezone: Asia/Kolkata
+          base: "" 
           
-          # The Isometric Calendar (The City)
+          # Enable ONLY the 3D City
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
           
-          # Neon/Cyberpunk Color Scheme
-          config_style: |
-             .header { display: none; } /* Hides standard header to use our custom one */
-             svg { background-color: #0D1117; }
+          # Visuals
+          config_timezone: Asia/Kolkata
+          config_padding: 0, 0, 0, 0
+          config_bg_color: 0D1117
