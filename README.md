@@ -274,23 +274,5 @@
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gamingstein&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=tokyonight&locale=en&hide_border=true&order=1" height="423" alt="stats graph"  />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app?username=Gamingstein&theme=darkhub&column=-1&row=2&margin-w=8&margin-h=8&no-bg=true&no-frame=true" height="150" alt="Trophies" />
-  <img width="20"/>
-  <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Gamingstein&layout=compact&card_width=320&langs_count=5&theme=tokyonight&hide_border=true" height="178" alt="Top Languages" />
-  <img width="20"/>
-  <img src="https://streak-stats.demolab.com?user=Gamingstein&mode=daily&theme=tokyonight&hide_border=true&border_radius=5" height="178" alt="GitHub Streak" />
-  </div>
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Gamingstein&radius=16&theme=tokyo-night&area=true&hide_border=true" height="353" alt="Contribution Graph" />
+  <img src="https://github.com/Gamingstein/Gamingstein/blob/main/github-metrics.svg" alt="3D Isometric City of Contributions" width="100%">
 </div>
