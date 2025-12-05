@@ -26,21 +26,6 @@ jobs:
           config_timezone: Asia/Kolkata
 
           # ------------------------------------------------
-          # 🎨 THE NIGHT CITY CSS HACK
-          # ------------------------------------------------
-          # Since we can't use 'config_theme', we inject CSS to force the look.
-          # 1. We set the background to Dark (#0D1117).
-          # 2. We make the text white.
-          # 3. We use a hue-rotate filter to turn the standard GREEN blocks into NEON PURPLE/PINK.
-          extras_css: |
-            svg { background-color: #0D1117 !important; border-radius: 10px; }
-            .header, .field { fill: #e6edf3 !important; color: #e6edf3 !important; }
-            /* This filter turns the Green blocks (approx 120deg) to Neon Pink/Purple (~280deg) */
-            .calendar { filter: hue-rotate(160deg) contrast(1.2); }
-            /* Optional: Add a slight glow */
-            .calendar g { shape-rendering: geometricPrecision; }
-
-          # ------------------------------------------------
           # 🏙️ THE 3D CITY
           # ------------------------------------------------
           plugin_isocalendar: yes
@@ -56,3 +41,10 @@ jobs:
           plugin_languages_limit: 8
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
+
+          plugin_achievements: yes
+          plugin_achievements_only: >-
+            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
+            scripter, packager, explorer, infographile, manager
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
