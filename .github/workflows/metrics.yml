@@ -1,15 +1,10 @@
 name: 3D Neon City
 
 on:
-  # 1. Run once a week (Sundays at Midnight UTC)
   schedule:
-    - cron: "0 0 * * 0"
-  
-  # 2. Run immediately on every new commit to master or main
+    - cron: "0 0 * * 0" # Weekly
   push:
     branches: ["master", "main"]
-  
-  # 3. Allow manual trigger button
   workflow_dispatch:
 
 jobs:
@@ -24,36 +19,34 @@ jobs:
           filename: github-metrics.svg
           
           # ------------------------------------------------
-          # 🎨 AESTHETIC & THEME SETTINGS
+          # ⚙️ CORE CONFIGURATION
           # ------------------------------------------------
           user: Gamingstein
+          template: classic
           
-          # "Dracula" provides the Neon Purple/Pink/Cyan color palette
-          config_theme: dracula
+          # This sets the local time for the stats
+          config_timezone: Asia/Kolkata
           
-          # Background: Match GitHub Dark Dimmed (0D1117) or keep transparent
-          config_bg_color: 0D1117
-          
-          # Center the content
-          config_padding: 0, 10 + 5%
+          # Padding makes the image breathe a bit (Valid input)
+          config_padding: 0, 8%
           
           # ------------------------------------------------
           # 🏙️ THE 3D CITY (ISOCALENDAR)
           # ------------------------------------------------
           plugin_isocalendar: yes
-          # "Full-year" creates a denser, more impressive city
+          # "Full-year" creates the dense city look
           plugin_isocalendar_duration: full-year
           
           # ------------------------------------------------
-          # 📊 THE SKYLINE (HEADER stats)
+          # 📊 THE HEADER STATS
           # ------------------------------------------------
-          # We enable 'header' to show your Avatar + Total Commits above the city
+          # This adds your avatar and total commit stats above the city
           base: header
           
           # ------------------------------------------------
-          # 🧪 TECH STACK (NEON BARS)
+          # 🧪 TECH STACK BARS
           # ------------------------------------------------
-          # Adds a colorful bar chart of languages under the city
+          # This adds the colorful language bars below the city
           plugin_languages: yes
           plugin_languages_ignored: >-
             html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
@@ -62,8 +55,3 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
-          
-          # ------------------------------------------------
-          # ⚙️ SYSTEM
-          # ------------------------------------------------
-          config_timezone: Asia/Kolkata
