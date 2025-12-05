@@ -24,16 +24,46 @@ jobs:
           filename: github-metrics.svg
           
           # ------------------------------------------------
-          # MINIMALIST SETTINGS
+          # 🎨 AESTHETIC & THEME SETTINGS
           # ------------------------------------------------
           user: Gamingstein
-          base: "" 
           
-          # Enable ONLY the 3D City
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          # "Dracula" provides the Neon Purple/Pink/Cyan color palette
+          config_theme: dracula
           
-          # Visuals
-          config_timezone: Asia/Kolkata
-          config_padding: 0, 0, 0, 0
+          # Background: Match GitHub Dark Dimmed (0D1117) or keep transparent
           config_bg_color: 0D1117
+          
+          # Center the content
+          config_padding: 0, 10 + 5%
+          
+          # ------------------------------------------------
+          # 🏙️ THE 3D CITY (ISOCALENDAR)
+          # ------------------------------------------------
+          plugin_isocalendar: yes
+          # "Full-year" creates a denser, more impressive city
+          plugin_isocalendar_duration: full-year
+          
+          # ------------------------------------------------
+          # 📊 THE SKYLINE (HEADER stats)
+          # ------------------------------------------------
+          # We enable 'header' to show your Avatar + Total Commits above the city
+          base: header
+          
+          # ------------------------------------------------
+          # 🧪 TECH STACK (NEON BARS)
+          # ------------------------------------------------
+          # Adds a colorful bar chart of languages under the city
+          plugin_languages: yes
+          plugin_languages_ignored: >-
+            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
+            gnuplot
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_colors: github
+          plugin_languages_threshold: 0%
+          
+          # ------------------------------------------------
+          # ⚙️ SYSTEM
+          # ------------------------------------------------
+          config_timezone: Asia/Kolkata
