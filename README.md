@@ -1,7 +1,7 @@
 <div align="center">
   <picture>
-    <source media="(min-width: 768px)" srcset="/../refs/heads/Gamingstein-patch-1/GitHub%20banner.gif">
-    <img src="/../refs/heads/Gamingstein-patch-1/GitHub%20banner.gif" align="center" width="100%" alt="Profile Banner"/>
+    <source media="(min-width: 768px)" srcset="/../refs/heads/Gamingstein-patch-1/GIF_20251205_001533_794.png">
+    <img src="/../refs/heads/Gamingstein-patch-1/GIF_20251205_001533_794.png" align="center" width="100%" alt="Profile Banner"/>
   </picture>
 </div>
 <br/>
