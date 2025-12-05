@@ -2,7 +2,7 @@ name: 3D Neon City
 
 on:
   schedule:
-    - cron: "0 0 * * 0" # Weekly
+    - cron: "0 0 * * 0"
   push:
     branches: ["master", "main"]
   workflow_dispatch:
@@ -17,41 +17,42 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: github-metrics.svg
-          
+
           # ------------------------------------------------
-          # ⚙️ CORE CONFIGURATION
+          # ⚙️ CONFIGURATION
           # ------------------------------------------------
           user: Gamingstein
           template: classic
-          
-          # This sets the local time for the stats
           config_timezone: Asia/Kolkata
-          
-          # Padding makes the image breathe a bit (Valid input)
-          config_padding: 0, 8%
-          
+
           # ------------------------------------------------
-          # 🏙️ THE 3D CITY (ISOCALENDAR)
+          # 🎨 THE NIGHT CITY CSS HACK
+          # ------------------------------------------------
+          # Since we can't use 'config_theme', we inject CSS to force the look.
+          # 1. We set the background to Dark (#0D1117).
+          # 2. We make the text white.
+          # 3. We use a hue-rotate filter to turn the standard GREEN blocks into NEON PURPLE/PINK.
+          extras_css: |
+            svg { background-color: #0D1117 !important; border-radius: 10px; }
+            .header, .field { fill: #e6edf3 !important; color: #e6edf3 !important; }
+            /* This filter turns the Green blocks (approx 120deg) to Neon Pink/Purple (~280deg) */
+            .calendar { filter: hue-rotate(160deg) contrast(1.2); }
+            /* Optional: Add a slight glow */
+            .calendar g { shape-rendering: geometricPrecision; }
+
+          # ------------------------------------------------
+          # 🏙️ THE 3D CITY
           # ------------------------------------------------
           plugin_isocalendar: yes
-          # "Full-year" creates the dense city look
           plugin_isocalendar_duration: full-year
-          
+
           # ------------------------------------------------
-          # 📊 THE HEADER STATS
+          # 📊 HEADER & STACK
           # ------------------------------------------------
-          # This adds your avatar and total commit stats above the city
           base: header
-          
-          # ------------------------------------------------
-          # 🧪 TECH STACK BARS
-          # ------------------------------------------------
-          # This adds the colorful language bars below the city
+
           plugin_languages: yes
-          plugin_languages_ignored: >-
-            html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell,
-            gnuplot
+          plugin_languages_ignored: html, css, tex, dockerfile, makefile, shell
           plugin_languages_limit: 8
-          plugin_languages_sections: most-used
           plugin_languages_colors: github
           plugin_languages_threshold: 0%
