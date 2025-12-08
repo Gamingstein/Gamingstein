@@ -4,7 +4,6 @@
   </picture>
 </div>
 <br/>
-
 <div align="center">
   <a href="https://www.linkedin.com/in/gamingstein/" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" height="28" alt="LinkedIn" />
@@ -23,20 +22,15 @@
   </a>
 </div>
 <br/>
-
 <div align="center">
   <h1>Hi, I'm Himanshu Shakya <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"></h1>
   <h3>Engineering the Intersection of Hardware & Software</h3>
-  
   <br/>
-  
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&pause=1000&color=fbfbfb&center=true&vCenter=true&width=600&lines=Full+Stack+Development;Embedded+Systems+Engineering;Interactive+Game+Development;High-Performance+Computing" alt="Typing SVG" />
   </a>
 </div>
-
 <br/>
-
 <div align="left">
   <blockquote>
     <p>
@@ -49,7 +43,6 @@
 ## 🛠️ Technical Expertise
 
 <div align="left">
-  
   <table>
     <tr>
       <td valign="top" width="50%">
@@ -76,18 +69,16 @@
       </td>
     </tr>
   </table>
-
 </div>
 <br/>
 
 ## 📈 Contributions & Activity
+
 <br/>
 <div align="center">
   <img src="github-metrics.svg" alt="GitHub Activity Graph" width="100%">
 </div>
-
 <br/>
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=100&section=footer"/>
 </div>
