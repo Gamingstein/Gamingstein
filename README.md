@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-    <img src="assets/banner.png" align="center" width="100%" alt="Profile Banner"/>
+    <img src="assets/banner.webp" align="center" width="100%" alt="Profile Banner"/>
   </picture>
 </div>
 <br/>
