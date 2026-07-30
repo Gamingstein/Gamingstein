@@ -13,7 +13,7 @@ import os, sys, base64, datetime, json, urllib.request
 USERNAME = os.environ.get("STATS_USERNAME", "Gamingstein")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
 OUT_DIR = os.environ.get("OUT_DIR", "assets")
-FONT_DIR = os.path.join(os.path.dirname(__file__), "fonts")
+FONT_DIR = os.path.join(os.path.dirname(__file__), "..", "fonts")
 
 if not TOKEN:
     sys.exit("Missing GH_TOKEN / GITHUB_TOKEN environment variable")
