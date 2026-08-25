@@ -6,9 +6,11 @@ the rest of the profile README. No third-party rendering service involved --
 this script runs the numbers and draws the SVG itself.
 
 Requires env var GH_TOKEN (a PAT with `read:user` + `public_repo`, or the
-default GITHUB_ACTIONS token) and USERNAME.
+default GitHub Actions token) and STATS_USERNAME.
 """
 import os, sys, base64, datetime, json, urllib.request
+from xml.etree import ElementTree
+from xml.sax.saxutils import escape
 
 USERNAME = os.environ.get("STATS_USERNAME", "Gamingstein")
 TOKEN = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
@@ -149,8 +151,25 @@ def font_face_block(weights):
     return "\n".join(blocks)
 
 
-def card_shell(width, height, body, weights=("Regular", "ExtraBold", "Bold")):
-    return f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg">
+def write_svg(path, content):
+    """Write a UTF-8 SVG and parse it immediately to catch malformed output."""
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    ElementTree.fromstring(content)
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(content)
+
+
+def card_shell(
+    width,
+    height,
+    body,
+    title="GitHub profile metric",
+    description="A self-hosted metric generated from GitHub data.",
+    weights=("Regular", "ExtraBold", "Bold"),
+):
+    return f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">{escape(title)}</title>
+  <desc id="svg-desc">{escape(description)}</desc>
   <defs>
     <style>
       {font_face_block(weights)}
@@ -178,8 +197,16 @@ for i, (label, value) in enumerate(rows):
     row_svg += f'<text x="24" y="{y}" class="label">{label}</text>'
     row_svg += f'<text x="276" y="{y}" text-anchor="end" class="value">{value}</text>'
 stats_body = f'<text x="24" y="30" class="title">STATS</text>{row_svg}'
-with open(os.path.join(OUT_DIR, "stats.svg"), "w") as f:
-    f.write(card_shell(300, 190, stats_body))
+write_svg(
+    os.path.join(OUT_DIR, "stats.svg"),
+    card_shell(
+        300,
+        190,
+        stats_body,
+        title="GitHub statistics",
+        description="Public repositories, total stars, followers, and all-time commits.",
+    ),
+)
 
 # ---- 2. langs.svg ---------------------------------------------------------
 bar_y = 52
@@ -195,8 +222,16 @@ for name, (size, color) in top_langs:
     lang_rows += f'<rect x="24" y="{bar_y+6}" width="{filled}" height="4" rx="2" fill="{color}"/>'
     bar_y += 30
 langs_body = f'<text x="24" y="30" class="title">TOP LANGUAGES</text>{lang_rows}'
-with open(os.path.join(OUT_DIR, "langs.svg"), "w") as f:
-    f.write(card_shell(300, bar_y + 10, langs_body))
+write_svg(
+    os.path.join(OUT_DIR, "langs.svg"),
+    card_shell(
+        300,
+        bar_y + 10,
+        langs_body,
+        title="Top programming languages",
+        description="The top programming languages by repository size.",
+    ),
+)
 
 # ---- 3. streak.svg --------------------------------------------------------
 streak_body = f"""
@@ -207,8 +242,16 @@ streak_body = f"""
   <text x="230" y="80" text-anchor="middle" class="value" style="font-size:26px">{longest}</text>
   <text x="230" y="100" text-anchor="middle" class="small">longest</text>
 """
-with open(os.path.join(OUT_DIR, "streak.svg"), "w") as f:
-    f.write(card_shell(300, 120, streak_body))
+write_svg(
+    os.path.join(OUT_DIR, "streak.svg"),
+    card_shell(
+        300,
+        120,
+        streak_body,
+        title="GitHub contribution streak",
+        description="Current and longest contribution streak.",
+    ),
+)
 
 print(f"generated stats for {USERNAME}: repos={public_repo_count} stars={total_stars} "
       f"followers={followers} commits={total_commits} streak={current}/{longest}")

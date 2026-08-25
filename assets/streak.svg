@@ -1,4 +1,6 @@
-<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">GitHub contribution streak</title>
+  <desc id="svg-desc">Current and longest contribution streak.</desc>
   <defs>
     <style>
       @font-face {

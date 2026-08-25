@@ -18,12 +18,18 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Validate profile assets
+        run: python scripts/validate_profile.py
+
       - name: Generate stat SVGs
         env:
           GH_TOKEN: ${{ secrets.STATS_TOKEN }}
           STATS_USERNAME: Gamingstein
           OUT_DIR: assets
         run: python scripts/generate_stats.py
+
+      - name: Validate generated SVGs
+        run: python scripts/validate_profile.py
 
       - name: Commit changes if anything moved
         run: |

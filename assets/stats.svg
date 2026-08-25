@@ -1,4 +1,6 @@
-<svg width="300" height="190" viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="190" viewBox="0 0 300 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">GitHub statistics</title>
+  <desc id="svg-desc">Public repositories, total stars, followers, and all-time commits.</desc>
   <defs>
     <style>
       @font-face {

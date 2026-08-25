@@ -1,4 +1,6 @@
-<svg width="300" height="242" viewBox="0 0 300 242" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="242" viewBox="0 0 300 242" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Top programming languages</title>
+  <desc id="svg-desc">The top programming languages by repository size.</desc>
   <defs>
     <style>
       @font-face {
